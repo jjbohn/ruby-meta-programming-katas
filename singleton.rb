@@ -1,9 +1,7 @@
 module Singleton
   class_eval do
     define_method("singletonize") do
-      class << self
-        private :new
-      end
+      private_class_method :new
 
       def self.instance(*args)
         @instance ||= new(*args)

@@ -1,4 +1,3 @@
-require 'rspec'
 require_relative '../singleton.rb'
 
 describe "Singleton" do
